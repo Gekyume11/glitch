@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen';
+}
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: #131417;
+    position: relative;
+}
+body::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb1%2Faa%2F2c%2Fb1aa2c6322c087183a432a7ede2695ae.gif&f=1&nofb=1&ipt=3e3b4394356f5d2b9eb9fc85c50b12e4e7a7d6fbd0ab3aa45a59746f1b94ce5c&ipo=images) no-repeat center;
+    background-size: 100% 120%;
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+h1{
+    animation: glow 1.2s linear infinite;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3DPAzwJxrwCre%2Fgiphy.gif&f=1&nofb=1&ipt=dc4dd2260b9ccecc06fc391c3c781a47f6dd210b6e9d1d80c61beb36b618cdc9&ipo=images);
+    color: transparent;
+    background-clip: text;
+    color: rgba(255, 255, 255, .2);
+    font-size: clamp(1.875rem, 0.4688rem + 8.0357vw, 7.5rem);
+}
+@keyframes glow{
+    0% { text-shadow: 0 0 100px white; }
+    25% { text-shadow: 0 0 60px white; }
+    50% { text-shadow: 0 0 50px white; }
+    75% { text-shadow: 0 0 60px white; }
+    100% { text-shadow: 0 0 120px white; }
+}
+span{
+    animation: typing 1s linear infinite;
+    font-size: clamp(1.875rem, 0.4688rem + 8.0357vw, 7.5rem);
+    color: white;
+}
+@keyframes typing{
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0;  }
+}
